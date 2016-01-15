@@ -15,6 +15,7 @@
                 $content_set = $content_set->get();
 
                 $content_list = [];
+                $content_list[] = ['name' => 'Select...', 'url' => false ];
 
                 foreach ($content_set as $content){
                     if (isset($content['url']) && isset($content['title'])){
